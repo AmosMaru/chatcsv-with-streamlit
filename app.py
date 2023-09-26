@@ -4,8 +4,10 @@ from dotenv import load_dotenv
 import os
 import pandas as pd
 from pandasai import PandasAI
+import matplotlib
+matplotlib.use('TkAgg')
 
-# load_dotenv()
+load_dotenv()
 
 
 openai_api_key = os.getenv("OPENAI_API_KEY")
